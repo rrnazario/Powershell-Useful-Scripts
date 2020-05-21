@@ -1,5 +1,5 @@
 Install-Module Az -Force
-Import-Module Az.Resource
+Import-Module Az.Compute
 
 Function FindMachineByPrivateIp($privateIp)
 {
