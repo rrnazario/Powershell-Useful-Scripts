@@ -22,7 +22,7 @@ Import-Module Az.Automation
 Import-Module Az.Websites
 
 
-$connectionName = 'devops-automation-prod'
+$connectionName = 'DEVOPS ACCOUNT SERVICE PRINCIPAL'
 $credential = Get-AutomationPSCredential -Name $connectionName
 $account = Get-AutomationConnection -Name $connectionName
 
