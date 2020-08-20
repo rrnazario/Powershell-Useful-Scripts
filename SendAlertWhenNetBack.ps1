@@ -14,7 +14,7 @@ $payload = @{
 
 while ($true){
     Invoke-WebRequest `
-                -Uri("https://api.telegram.org/bot{0}/sendMessage" -f $token) `
+                -Uri("https://api.telegram.org/bot{0}/sendMessage" -f $telegramToken) `
                 -Method Post `
                 -ContentType "application/json;charset=utf-8" `
                 -Body (ConvertTo-Json -Compress -InputObject $payload)
